@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92598EF62757E5F50015B14B /* CloseUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92598EF52757E5F50015B14B /* CloseUPViewController.swift */; };
 		92F88C3C274F239F001CCD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F88C3B274F239F001CCD94 /* AppDelegate.swift */; };
 		92F88C3E274F239F001CCD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F88C3D274F239F001CCD94 /* SceneDelegate.swift */; };
 		92F88C40274F239F001CCD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F88C3F274F239F001CCD94 /* ViewController.swift */; };
 		92F88C43274F239F001CCD94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C41274F239F001CCD94 /* Main.storyboard */; };
 		92F88C45274F23A0001CCD94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C44274F23A0001CCD94 /* Assets.xcassets */; };
 		92F88C48274F23A0001CCD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C46274F23A0001CCD94 /* LaunchScreen.storyboard */; };
+		92F88C50274F2C00001CCD94 /* 画像0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C4F274F2C00001CCD94 /* 画像0.jpeg */; };
+		92F88C52274F2C07001CCD94 /* 画像1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C51274F2C07001CCD94 /* 画像1.jpeg */; };
+		92F88C54274F2C0E001CCD94 /* 画像2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 92F88C53274F2C0E001CCD94 /* 画像2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92598EF52757E5F50015B14B /* CloseUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseUPViewController.swift; sourceTree = "<group>"; };
 		92F88C38274F239F001CCD94 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F88C3B274F239F001CCD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92F88C3D274F239F001CCD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		92F88C44274F23A0001CCD94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F88C47274F23A0001CCD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92F88C49274F23A0001CCD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F88C4F274F2C00001CCD94 /* 画像0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "画像0.jpeg"; sourceTree = "<group>"; };
+		92F88C51274F2C07001CCD94 /* 画像1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "画像1.jpeg"; sourceTree = "<group>"; };
+		92F88C53274F2C0E001CCD94 /* 画像2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "画像2.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				92F88C3B274F239F001CCD94 /* AppDelegate.swift */,
 				92F88C3D274F239F001CCD94 /* SceneDelegate.swift */,
 				92F88C3F274F239F001CCD94 /* ViewController.swift */,
+				92598EF52757E5F50015B14B /* CloseUPViewController.swift */,
 				92F88C41274F239F001CCD94 /* Main.storyboard */,
+				92F88C4F274F2C00001CCD94 /* 画像0.jpeg */,
+				92F88C51274F2C07001CCD94 /* 画像1.jpeg */,
+				92F88C53274F2C0E001CCD94 /* 画像2.jpeg */,
 				92F88C44274F23A0001CCD94 /* Assets.xcassets */,
 				92F88C46274F23A0001CCD94 /* LaunchScreen.storyboard */,
 				92F88C49274F23A0001CCD94 /* Info.plist */,
@@ -125,8 +137,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F88C48274F23A0001CCD94 /* LaunchScreen.storyboard in Resources */,
+				92F88C50274F2C00001CCD94 /* 画像0.jpeg in Resources */,
 				92F88C45274F23A0001CCD94 /* Assets.xcassets in Resources */,
 				92F88C43274F239F001CCD94 /* Main.storyboard in Resources */,
+				92F88C54274F2C0E001CCD94 /* 画像2.jpeg in Resources */,
+				92F88C52274F2C07001CCD94 /* 画像1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92598EF62757E5F50015B14B /* CloseUPViewController.swift in Sources */,
 				92F88C40274F239F001CCD94 /* ViewController.swift in Sources */,
 				92F88C3C274F239F001CCD94 /* AppDelegate.swift in Sources */,
 				92F88C3E274F239F001CCD94 /* SceneDelegate.swift in Sources */,
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kouki.x.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kouki.x.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
