@@ -27,7 +27,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="Aal-ct-Dhx">
-                                        <rect key="frame" x="46" y="248" width="282" height="390"/>
+                                        <rect key="frame" x="63.666666666666686" y="248" width="247" height="390"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-zJ-94r">
                                                 <rect key="frame" x="0.0" y="0.0" width="31" height="390"/>
@@ -37,15 +37,15 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2p-IF-cNA">
-                                                <rect key="frame" x="108" y="0.0" width="31" height="390"/>
+                                                <rect key="frame" x="107.99999999999999" y="0.0" width="31.000000000000014" height="390"/>
                                                 <state key="normal" title="戻る"/>
                                                 <connections>
                                                     <action selector="backButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xen-tY-IJM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neV-P5-ORQ">
-                                                <rect key="frame" x="216" y="0.0" width="66" height="390"/>
-                                                <state key="normal" title="再生/停止"/>
+                                                <rect key="frame" x="216" y="0.0" width="31" height="390"/>
+                                                <state key="normal" title="再生"/>
                                                 <connections>
                                                     <action selector="responductionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oiD-31-acB"/>
                                                 </connections>
@@ -74,6 +74,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="tUY-8b-LHL">
                     <connections>
+                        <action selector="closeUPButton:" destination="BYZ-38-t0r" id="pqs-mF-fFC"/>
                         <segue destination="9xN-7v-Elk" kind="show" id="Ccf-Nx-QCg"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -89,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-j0-ghl">
-                                <rect key="frame" x="149" y="750" width="132" height="38"/>
+                                <rect key="frame" x="149" y="749" width="132" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -97,7 +98,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-if-YMP" userLabel="Image View2">
-                                <rect key="frame" x="20" y="20" width="388" height="685"/>
+                                <rect key="frame" x="20" y="19" width="388" height="685"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

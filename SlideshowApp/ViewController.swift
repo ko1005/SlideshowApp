@@ -102,7 +102,7 @@ class ViewController: UIViewController {
     
     @objc func onTimer(_ timer: Timer) {
         
-        if imageIndex == 2{
+        if imageIndex == 2 {
             imageIndex = 0
         }else{
             imageIndex += 1
@@ -113,8 +113,20 @@ class ViewController: UIViewController {
     }
     
     //UIImageViewから画面遷移する
+    
     @IBAction func closeUPButton(_ sender: Any) {
-    }
+        
+        if self.timer != nil {
+            self.timer!.invalidate()
+            self.timer = nil
+            
+        }
+        
+            
+            
+        
+        }
+        
     
 
     
