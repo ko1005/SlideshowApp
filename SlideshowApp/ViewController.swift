@@ -13,21 +13,21 @@ class ViewController: UIViewController {
     
     //画像の読み込み
     var image = ["画像0.jpeg","画像1.jpeg","画像2.jpeg"
-                                 ]
+    ]
     
     var tapCount = 1
     
-
+    
     //配列に指定するindex番号を宣言
     var imageIndex = 0
     
-
+    
     //タイマーを格納するプロパティ変数timerの宣言
     var timer:Timer?
     
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var imageView: UIImageView!
-
+    
     @IBOutlet weak var responductionButton: UIButton!
     
     @IBOutlet weak var nextButton: UIButton!
@@ -48,20 +48,20 @@ class ViewController: UIViewController {
     
     
     
-
+    
     //進むボタン　IBAction
     @IBAction func nextButton(_ sender: Any) {
         
         if imageIndex == 2 {
-        imageIndex = 0
-    }
-    else {
-    imageIndex += 1
+            imageIndex = 0
+        }
+        else {
+            imageIndex += 1
         }
         imageView.image = UIImage(named:image[imageIndex])
     }
     
-   
+    
     
     //戻るボタン　IBAction
     @IBAction func backButton(_ sender: Any) {
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         
         if  self.timer != nil {
             
-        
+            
             responductionButton.setTitle("再生", for: UIControl.State.normal)
             timer?.invalidate()
             timer = nil
@@ -109,12 +109,22 @@ class ViewController: UIViewController {
         }
         
         imageView.image = UIImage(named:image[imageIndex])
-
+        
     }
     
     //UIImageViewから画面遷移する
     
     @IBAction func closeUPButton(_ sender: Any) {
+        
+    }
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let closeUPViewController:CloseUPViewController = segue.destination as! CloseUPViewController
+        
+        closeUPViewController.image = UIImage(named: image[imageIndex])
         
         if self.timer != nil {
             self.timer!.invalidate()
@@ -122,19 +132,7 @@ class ViewController: UIViewController {
             
         }
         
-            
-            
         
-        }
-        
-    
-
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       let closeUPViewController:CloseUPViewController = segue.destination as! CloseUPViewController
-         
-        closeUPViewController.image = UIImage(named: image[imageIndex])
-
     }
     
     
@@ -142,13 +140,13 @@ class ViewController: UIViewController {
         
     }
     
-   
+    
     
     override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
     }
-
     
-
+    
+    
 }
 

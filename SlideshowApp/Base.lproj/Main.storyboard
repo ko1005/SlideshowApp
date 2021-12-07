@@ -68,13 +68,11 @@
                         <outlet property="imageView" destination="Qrf-ni-YPq" id="t73-1u-i0k"/>
                         <outlet property="nextButton" destination="ujQ-zJ-94r" id="jNM-0J-Ttf"/>
                         <outlet property="responductionButton" destination="neV-P5-ORQ" id="oLu-zz-8a6"/>
-                        <segue destination="9xN-7v-Elk" kind="presentation" identifier="closeUPViewController" id="xE6-4K-RW9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="tUY-8b-LHL">
                     <connections>
-                        <action selector="closeUPButton:" destination="BYZ-38-t0r" id="pqs-mF-fFC"/>
                         <segue destination="9xN-7v-Elk" kind="show" id="Ccf-Nx-QCg"/>
                     </connections>
                 </tapGestureRecognizer>
@@ -117,9 +115,6 @@
             <point key="canvasLocation" x="836.91588785046724" y="117.92656587473003"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="xE6-4K-RW9"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
